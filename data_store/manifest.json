@@ -1,0 +1,102 @@
+{
+  "hatexplain": {
+    "key": "hatexplain",
+    "path": "/DATA/Rajesh-Research/Research-Articles/SAGE-Fusion-POC/poc/data_store/hatexplain",
+    "languages": "English (implicit)",
+    "license": "MIT",
+    "hf_id": "Hate-speech-CNERG/hatexplain",
+    "splits": {
+      "test": {
+        "rows": 1924,
+        "toxic": 1142,
+        "clean": 782
+      },
+      "train": {
+        "rows": 15383,
+        "toxic": 9132,
+        "clean": 6251
+      },
+      "validation": {
+        "rows": 1922,
+        "toxic": 1141,
+        "clean": 781
+      }
+    }
+  },
+  "dravidian_tamil": {
+    "key": "dravidian_tamil",
+    "path": "/DATA/Rajesh-Research/Research-Articles/SAGE-Fusion-POC/poc/data_store/dravidian_tamil",
+    "languages": "Tamil-English (code-mixed)",
+    "license": "CC BY 4.0",
+    "hf_id": "community-datasets/offenseval_dravidian",
+    "splits": {
+      "train": {
+        "rows": 33685,
+        "toxic": 8260,
+        "clean": 25425
+      },
+      "validation": {
+        "rows": 4216,
+        "toxic": 1023,
+        "clean": 3193
+      }
+    }
+  },
+  "dravidian_malayalam": {
+    "key": "dravidian_malayalam",
+    "path": "/DATA/Rajesh-Research/Research-Articles/SAGE-Fusion-POC/poc/data_store/dravidian_malayalam",
+    "languages": "Malayalam-English (code-mixed)",
+    "license": "CC BY 4.0",
+    "hf_id": "community-datasets/offenseval_dravidian",
+    "splits": {
+      "train": {
+        "rows": 14723,
+        "toxic": 570,
+        "clean": 14153
+      },
+      "validation": {
+        "rows": 1836,
+        "toxic": 57,
+        "clean": 1779
+      }
+    }
+  },
+  "dravidian_kannada": {
+    "key": "dravidian_kannada",
+    "path": "/DATA/Rajesh-Research/Research-Articles/SAGE-Fusion-POC/poc/data_store/dravidian_kannada",
+    "languages": "Kannada-English (code-mixed)",
+    "license": "CC BY 4.0",
+    "hf_id": "community-datasets/offenseval_dravidian",
+    "splits": {
+      "train": {
+        "rows": 4695,
+        "toxic": 1151,
+        "clean": 3544
+      },
+      "validation": {
+        "rows": 586,
+        "toxic": 160,
+        "clean": 426
+      }
+    }
+  },
+  "toxigen": {
+    "key": "toxigen",
+    "path": "/DATA/Rajesh-Research/Research-Articles/SAGE-Fusion-POC/poc/data_store/toxigen",
+    "languages": "English (13 groups, implicit)",
+    "license": "Open (HF terms)",
+    "hf_id": "toxigen/toxigen-data",
+    "splits": {
+      "test": {
+        "rows": 940,
+        "toxic": 402,
+        "clean": 538
+      },
+      "train": {
+        "rows": 8960,
+        "toxic": 3383,
+        "clean": 5577
+      }
+    }
+  }
+}
