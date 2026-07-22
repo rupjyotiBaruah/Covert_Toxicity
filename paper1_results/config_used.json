@@ -1,0 +1,36 @@
+{
+  "models": [
+    "ai4bharat/indic-bert"
+  ],
+  "datasets": [
+    "dravidian_tamil",
+    "dravidian_malayalam",
+    "dravidian_kannada",
+    "hatexplain"
+  ],
+  "train_configs": [
+    "ce",
+    "supcon",
+    "hardneg"
+  ],
+  "seeds": [
+    42,
+    123,
+    2024,
+    7,
+    99
+  ],
+  "data_dir": "./data_store",
+  "out": "./paper1_results",
+  "epochs": 3,
+  "lr_head": 0.001,
+  "lr_bb": 2e-05,
+  "maxlen": 64,
+  "max_train": 4000,
+  "max_eval": 1500,
+  "val_frac": 0.15,
+  "temp": 0.1,
+  "regime": "finetune",
+  "seed_data": 42,
+  "save_models": false
+}
