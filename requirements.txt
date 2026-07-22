@@ -1,0 +1,10 @@
+# SAGE-Fusion POC - dependencies for main.py
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.18.0
+scikit-learn>=1.4.0
+numpy>=1.26.0
+requests>=2.31.0
+tqdm>=4.66.0
+sentencepiece>=0.2.0     # required by IndicBERT / XLM-R tokenizers
+protobuf>=4.25.0         # required by some HuggingFace tokenizers
