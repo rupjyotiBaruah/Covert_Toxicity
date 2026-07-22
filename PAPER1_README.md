@@ -1,4 +1,4 @@
-# Paper-1 — Hard-Negative Supervised Contrastive Learning with Calibrated Decisions for Covert Code-Mixed Toxicity
+### Hard-Negative Supervised Contrastive Learning with Calibrated Decisions for Covert Code-Mixed Toxicity
 
 Reproducible experiment framework for the paper. Built on verified components
 (`sage_v6.py`, `sage_v7.py`); the method is **not** the falsified symbolic/lexical
