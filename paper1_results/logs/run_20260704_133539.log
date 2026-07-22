@@ -1,0 +1,25 @@
+13:35:39 | INFO | logging to paper1_results/logs/run_20260704_133539.log
+13:35:39 | INFO | device=cuda | 18 cells total | 0 done | 18 to run
+13:35:39 | INFO | models=['muril-base-cased'] datasets=['dravidian_tamil', 'hatexplain'] configs=['ce', 'supcon', 'hardneg'] seeds=[42, 123, 2024]
+13:35:39 | INFO | estimated time: ~0:12:00 (rough, cuda)
+13:35:42 | INFO | preparing data: muril-base-cased / dravidian_tamil
+13:36:08 | INFO | [1/18] muril-base-cased__dravidian_tamil__ce__s42  toxF1(cal)=0.6261 PR-AUC=0.6263  (29s, ETA 0:08:08)
+13:36:32 | INFO | [2/18] muril-base-cased__dravidian_tamil__ce__s123  toxF1(cal)=0.5968 PR-AUC=0.6126  (24s, ETA 0:07:00)
+13:36:58 | INFO | [3/18] muril-base-cased__dravidian_tamil__ce__s2024  toxF1(cal)=0.6047 PR-AUC=0.6231  (26s, ETA 0:06:33)
+13:37:24 | INFO | [4/18] muril-base-cased__dravidian_tamil__supcon__s42  toxF1(cal)=0.6256 PR-AUC=0.6378  (26s, ETA 0:06:05)
+13:37:50 | INFO | [5/18] muril-base-cased__dravidian_tamil__supcon__s123  toxF1(cal)=0.5728 PR-AUC=0.6467  (26s, ETA 0:05:39)
+13:38:16 | INFO | [6/18] muril-base-cased__dravidian_tamil__supcon__s2024  toxF1(cal)=0.5760 PR-AUC=0.6561  (26s, ETA 0:05:12)
+13:38:42 | INFO | [7/18] muril-base-cased__dravidian_tamil__hardneg__s42  toxF1(cal)=0.6162 PR-AUC=0.6360  (26s, ETA 0:04:46)
+13:39:08 | INFO | [8/18] muril-base-cased__dravidian_tamil__hardneg__s123  toxF1(cal)=0.6286 PR-AUC=0.6373  (26s, ETA 0:04:20)
+13:39:34 | INFO | [9/18] muril-base-cased__dravidian_tamil__hardneg__s2024  toxF1(cal)=0.6065 PR-AUC=0.6466  (26s, ETA 0:03:54)
+13:39:34 | INFO | preparing data: muril-base-cased / hatexplain
+13:39:59 | INFO | [10/18] muril-base-cased__hatexplain__ce__s42  toxF1(cal)=0.8035 PR-AUC=0.8848  (25s, ETA 0:03:27)
+13:40:24 | INFO | [11/18] muril-base-cased__hatexplain__ce__s123  toxF1(cal)=0.8127 PR-AUC=0.8844  (25s, ETA 0:03:00)
+13:40:49 | INFO | [12/18] muril-base-cased__hatexplain__ce__s2024  toxF1(cal)=0.8098 PR-AUC=0.8850  (25s, ETA 0:02:34)
+13:41:15 | INFO | [13/18] muril-base-cased__hatexplain__supcon__s42  toxF1(cal)=0.8013 PR-AUC=0.8878  (26s, ETA 0:02:08)
+13:41:40 | INFO | [14/18] muril-base-cased__hatexplain__supcon__s123  toxF1(cal)=0.8056 PR-AUC=0.8900  (25s, ETA 0:01:42)
+13:42:06 | INFO | [15/18] muril-base-cased__hatexplain__supcon__s2024  toxF1(cal)=0.8155 PR-AUC=0.8862  (26s, ETA 0:01:17)
+13:42:32 | INFO | [16/18] muril-base-cased__hatexplain__hardneg__s42  toxF1(cal)=0.8015 PR-AUC=0.8869  (26s, ETA 0:00:51)
+13:42:58 | INFO | [17/18] muril-base-cased__hatexplain__hardneg__s123  toxF1(cal)=0.7887 PR-AUC=0.8833  (26s, ETA 0:00:25)
+13:43:24 | INFO | [18/18] muril-base-cased__hatexplain__hardneg__s2024  toxF1(cal)=0.8092 PR-AUC=0.8843  (26s, ETA 0:00:00)
+13:43:24 | INFO | DONE. Aggregate with:  python paper1_report.py --results ./paper1_results/results
