@@ -1,0 +1,56 @@
+# API Baseline Prompts for SAGE-Fusion Evaluation
+
+These prompts are used for the API-based baselines (GPT-4o-mini, Perspective API)
+listed in Table 3 of the methodology document.
+
+## GPT-4o-mini — Zero-Shot
+
+```
+You are a toxicity detection classifier. Read the following text and respond with
+EXACTLY one of two labels: "toxic" or "non-toxic".
+
+Text: {text}
+
+Label:
+```
+
+## GPT-4o-mini — Three-Shot
+
+```
+You are a toxicity detection classifier. Below are three examples, each followed
+by the correct label. After the examples, classify the new text.
+
+Example 1:
+Text: you are such an idiot
+Label: toxic
+
+Example 2:
+Text: this movie was great, loved it
+Label: non-toxic
+
+Example 3:
+Text: those people are ruining our country
+Label: toxic
+
+Now classify:
+Text: {text}
+Label:
+```
+
+## LlamaGuard-3 — System Prompt
+
+(LlamaGuard-3 uses its own built-in safety taxonomy; we use the default
+chat template and parse the "safe"/"unsafe" output. No custom prompt
+needed beyond the standard LlamaGuard chat template.)
+
+## Aegis 2.0 — System Prompt
+
+(Aegis 2.0 also uses its own chat template; we feed the raw text as the
+user message and parse the "Safe"/"Unsafe" response.)
+
+## Perspective API
+
+(Perspective API requires no prompt; we send the raw text via the
+`analyze` endpoint with `attributes: [TOXICITY, SEVERE_TOXICITY,
+IDENTITY_ATTACK, INSULT, PROFANITY, THREAT]`. The threshold for binary
+classification is 0.5 on the TOXICITY attribute.)
